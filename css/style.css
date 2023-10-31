@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --1:white;
+    --2:black;
+    --3:green;
+    --4:rgb(101, 194, 101);
+    --5:rgb(70, 74, 70);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--4);
+}
+
+.screen{
+    user-select: none;
+}
+
+.screen .chronometer{
+    height: 8rem;
+    background-color: var(--3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem .5rem .4rem var(--3);
+    border: none;
+}
+
+.screen .chronometer span{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 490;
+    color: var(--1);
+}
+
+.chronometer span.separator{
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.chronometer span.separatorMili,
+.chronometer span.miliSecond{
+    color: var(--2);
+    margin-left: .2rem;
+}
+
+.screen .btn{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn button{
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    margin: 0rem .6rem;
+    color: var(--1);
+    background-color: var(--5);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: .9rem;
+    cursor: pointer;
+    box-shadow: .1rem .1rem .1rem 0rem var(--2);
+}
+
+.btn button.on{
+    pointer-events: none;
+    opacity: .7;
+}
